@@ -4,7 +4,7 @@ if(process.env.NODE_ENV !== "production"){
 
 // mongodb+srv://mukherjeeankit370:<password>@cluster0.gkvhuya.mongodb.net/?retryWrites=true&w=majority
 
-const dbUrl = process.env.DB_URL || "mongodb://127.0.0.1:27017/yelp-camp";
+const dbUrl = process.env.DB_URL;
 
 const express = require('express');
 const mongoose = require('mongoose');
