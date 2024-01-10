@@ -3,7 +3,6 @@ const Campground = require("../models/campground");
 const cities = require('./cities')
 const {descriptors, places} = require('./seedhelpers')
 
-
 const dbUrl = process.env.DB_URL;
 mongoose
   .connect(dbUrl)
@@ -13,6 +12,7 @@ mongoose
   .catch((err) => {
     console.log("OH NO! ERROR", err);
   });
+
 
 const sample = (array) => {
     return array[Math.floor(Math.random() * array.length)]
